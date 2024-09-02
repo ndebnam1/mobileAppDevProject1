@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./new.css">
+        <script src="https://kit.fontawesome.com/9a1bb33d53.js" crossorigin="anonymous"></script>
+
+        <title>New</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="header-container">
+                <div class="logo-container">
+                  <a href="./index.html">  <img class="logo" src="./images/Better Coffee_transparent-.png" alt="Logo"></a>
+                </div>
+                <div class="search-bar-container">
+                    <input class="search-bar" type="text" placeholder="search">
+                    <button class="search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="./items.html">Browse</a></li>
+                    <li><a href="./new.html">Sell</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+
+            </div>
+        </header>
+
+        <div class="wrapper">
+
+            <main>
+                <div class="container">
+                    <div class="box">
+                        <h2>Sell at Better Coffee!</h2>
+                        <p>Start selling your items today!</p>
+                    </div>
+                    <div class="form-container">
+                        <h1>List New Item</h1>
+                        <form action="/submit" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label for="condition">Condition</label>
+                                <select id="condition" name="condition" required>
+                                    <option value="">Select condition</option>
+                                    <option value="new">New</option>
+                                    <option value="like-new">Like New</option>
+                                    <option value="good">Good</option>
+                                    <option value="fair">Fair</option>
+                                    <option value="poor">Poor</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="title">Title</label>
+                                <input type="text" id="title" name="title" action="#" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="seller">Seller</label>
+                                <input type="text" id="seller" name="seller" action="#" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="price">Price</label>
+                                <input type="text" id="price" name="price" action="#" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="details">Details</label>
+                                <textarea id="details" name="details" rows="4" action="#"required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="image">Image</label>
+                                <input type="file" id="image" name="image" accept="image/*" required>
+                            </div>
+                            <button class="submit-btn" type="submit">Submit</button>
+                        </form>
+                    </div>
+
+
+
+                </div>
+
+
+
+            </main>
+            <footer>
+
+                <div class="footer-left"><i class="fa-regular fa-copyright"></i> Better Coffee Corp.</div>
+                <div class="footer-right">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                </div>
+
+
+        </div>
+
+
+
+
+    </body>
+
+</html>

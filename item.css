@@ -1,4 +1,3 @@
-/* Colors */
 :root
 {
     --mint-cream: #f1f7ee;
@@ -101,74 +100,40 @@ header
 
 }
 
-
-.container
-{
-    display: flex;
-    justify-content: space-evenly;
+.container{
+    display:flex;
     align-items: center;
-    height: 80vh;
-}
-
-.left,
-.right
-{
-    border-style: solid;
-    height: 100%;
-    width: 45%;
-    border-radius: 20px;
-
-}
-
-.left
-{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
+    gap:5%;
+    height: 90vh;
     background-color: var(--khaki);
-}
-
-.right
-{
-    display: flex;
-    
-}
-
-.left-top,
-.left-bottom
-{
-    /* border-style: dotted; */
-    height: 100%;
-    margin: 5px;
 
 }
 
-.left-top
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.right,.left{
+    /* border-style: solid; */
+    width: 50%;
+
+}
+.right{
+    /* display: flex; */
     flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: space-between; */
 }
-.left-bottom{
-    display: flex;
-}
-
-.left-top-btn
-{
-    border-radius: 48px;
-    width: 150px;
-    height: 30px;
-    /* border-style: none; */
-    border: 1px solid var(--ash-gray);
-    background-color: rgb(199, 199, 199);
-    
+img{
+    width: 30%;
+    /* height: 100%; */
 }
 
-.coffee-img
-{
-    width: 100%;
-    /* height: auto; */
+button{
+    border-radius: 20px;
+    background-color: var(--mint-cream);
+    padding: 5px 10px;
+    border-style: none;
+    cursor: pointer;
+    /* font-size: large; */
+    color: var(--black);
 }
 
 .footer-left, .footer-right{
@@ -197,4 +162,5 @@ min-height: 100vh;
 }
 main{
     flex:1;
+    background-color: var(--khaki);
 }

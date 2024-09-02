@@ -1,3 +1,4 @@
+
 /* Colors */
 :root
 {
@@ -15,20 +16,6 @@
     --khaki: #c4af9a;
 }
 
-
-body
-{
-
-    flex-direction: column;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: var(--alice-blue);
-    height: 100vh;
-    position: relative;
-
-}
 
 .header-container
 {
@@ -101,76 +88,6 @@ header
 
 }
 
-
-.container
-{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 80vh;
-}
-
-.left,
-.right
-{
-    border-style: solid;
-    height: 100%;
-    width: 45%;
-    border-radius: 20px;
-
-}
-
-.left
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: var(--khaki);
-}
-
-.right
-{
-    display: flex;
-    
-}
-
-.left-top,
-.left-bottom
-{
-    /* border-style: dotted; */
-    height: 100%;
-    margin: 5px;
-
-}
-
-.left-top
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.left-bottom{
-    display: flex;
-}
-
-.left-top-btn
-{
-    border-radius: 48px;
-    width: 150px;
-    height: 30px;
-    /* border-style: none; */
-    border: 1px solid var(--ash-gray);
-    background-color: rgb(199, 199, 199);
-    
-}
-
-.coffee-img
-{
-    width: 100%;
-    /* height: auto; */
-}
-
 .footer-left, .footer-right{
     display: flex;
     /* width: 50%; */
@@ -197,4 +114,78 @@ min-height: 100vh;
 }
 main{
     flex:1;
+}
+
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box{
+    margin: 10%;
+}
+.form-container {
+    /* max-width: 600px; */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--alice-blue);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 40%;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: var(--cool-gray);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+
+body{
+    background-color: var(--khaki);;
+ flex-direction: column;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    /* background-color: var(--alice-blue); */
+    height: 100vh;
+    position: relative;
 }
